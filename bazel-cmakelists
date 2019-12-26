@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python
 #
 # A script to generate CMakeLists.txt from bazel C++ target.
 # With CMakeLists.txt file, it can be opened directly from CLion.
@@ -62,7 +62,7 @@ def run_bazel(args):
     args = sa.split() + args
 
   args = ['bazel'] + args
-  print args
+  print(args)
   return subprocess.check_output(args)
 
 def ExtractSources():
